@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rosita Distribuciones</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio">
+        <img src="assets/logo.jpg" alt="Rosita Distribuciones" class="logo">
+        <div class="brand-text">
+          <div class="brand-name">Rosita Distribuciones</div>
+          <div class="brand-sub">Moda para toda la familia</div>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn-ig" href="https://instagram.com/distribuciones_rosita" target="_blank">@distribuciones_rosita</a>
+        <a class="btn-wa" id="wa-top" href="https://wa.me/573104105844" target="_blank">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1>Distribuimos ropa para toda la familia</h1>
+          <p class="hero-lead">Calidad, estilo y comodidad al mejor precio.</p>
+          <p class="hero-location">📍 <strong>CC Calles de Oro</strong></p>
+          <div class="hero-ctas">
+            <a class="btn-primary" href="#catalogo">Ver catálogo</a>
+            <a class="btn-outline" href="https://wa.me/573104105844" target="_blank">Hablar por WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <img src="assets/logo.jpg" alt="logo" class="hero-logo">
+        </div>
+      </div>
+    </section>
+
+    <section id="catalogo" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Catálogo</h2>
+          <div class="filters">
+            <button class="filter active" data-filter="all">Todos</button>
+            <button class="filter" data-filter="bebe">Bebé</button>
+            <button class="filter" data-filter="ninos">Niños</button>
+            <button class="filter" data-filter="dama">Dama</button>
+            <button class="filter" data-filter="caballero">Caballero</button>
+            <button class="filter" data-filter="chaquetas">Chaquetas</button>
+          </div>
+        </div>
+        <div id="product-grid" class="product-grid">
+          <!-- Place product image files inside images/ and update data-src attributes or replace cards -->
+          <!-- Example card (replace image paths with your own in the images/ folder) -->
+          <div class="product-card" data-category="bebe">
+            <div class="product-media empty">Sube tu imagen a /images</div>
+            <div class="product-info">
+              <div class="product-title">Nombre del producto</div>
+              <div class="product-meta">Algodón suave</div>
+              <a class="product-wa" href="https://wa.me/573104105844" target="_blank">Pedir por WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria" class="section">
+      <div class="container">
+        <h2>Galería</h2>
+        <p class="muted">Sube tus fotos a la carpeta <code>/images</code> y aquí aparecerán en el sitio.</p>
+        <div id="gallery-grid" class="gallery-grid">
+          <!-- Empty by design; add your files to /images -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact-section">
+      <div class="container">
+        <h2>Contacto</h2>
+        <div class="contact-grid">
+          <div>
+            <strong>Rosita Distribuciones</strong>
+            <p>📍 CC Calles de Oro</p>
+            <p>📱 WhatsApp: <a href="https://wa.me/573104105844">+57 310 4105844</a></p>
+            <p>📸 Instagram: <a href="https://instagram.com/distribuciones_rosita" target="_blank">@distribuciones_rosita</a></p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn-primary" href="https://wa.me/573104105844">Enviar un mensaje</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© Rosita Distribuciones</div>
+      <div class="muted">Diseño listo para subir a Netlify o GitHub Pages</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
