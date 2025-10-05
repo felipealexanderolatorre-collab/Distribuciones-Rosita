@@ -6,86 +6,127 @@
   <title>Distribuciones Rosita</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffe6f0;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background-color: #ffd1e1;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
     .logo {
-      max-width: 50px;
-      height: auto;
+      width: 120px !important;
+      height: auto !important;
+      border-radius: 10px;
+    }
+
+    .brand-text {
+      text-align: left;
+      margin-left: 10px;
+    }
+
+    nav a {
+      color: #5c005c;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .hero-logo {
+      max-width: 200px !important;
+      height: auto !important;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background-color: #ff4d94;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    .btn-primary:hover {
+      background-color: #e60073;
+    }
+
+    footer {
+      background-color: #ffd1e1;
+      padding: 15px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#inicio">
-        <img src="assets/logo.jpg" alt="Distribuciones Rosita" class="logo">
-        <div class="brand-text">
-          <div class="brand-name">Distribuciones Rosita</div>
-          <div class="brand-sub">Moda para toda la familia</div>
-        </div>
-      </a>
-      <nav class="main-nav">
-        <a href="#inicio">Inicio</a>
-        <a href="#catalogo">Catálogo</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-      <div class="header-actions">
-        <a class="btn-ig" href="https://instagram.com/distribuciones_rosita" target="_blank">@distribuciones_rosita</a>
-        <a class="btn-wa" id="wa-top" href="https://wa.me/573104105844" target="_blank">WhatsApp</a>
+  <header>
+    <div style="display: flex; align-items: center;">
+      <img src="assets/logo.jpg" alt="Distribuciones Rosita" class="logo">
+      <div class="brand-text">
+        <div><strong>Distribuciones Rosita</strong></div>
+        <div>Moda para toda la familia</div>
       </div>
+    </div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div>
+      <a href="https://instagram.com/distribuciones_rosita" target="_blank">@distribuciones_rosita</a> |
+      <a href="https://wa.me/573104105844" target="_blank">WhatsApp</a>
     </div>
   </header>
 
   <main>
     <section id="inicio" class="hero">
-      <div class="container hero-inner">
-        <div class="hero-left">
-          <h1>Distribuimos ropa para toda la familia</h1>
-          <p class="hero-lead">Calidad, estilo y comodidad al mejor precio.</p>
-          <p class="hero-location">📍 <strong>CC Calles de Oro</strong></p>
-          <div class="hero-ctas">
-            <a class="btn-outline" href="https://wa.me/573104105844" target="_blank">Hablar por WhatsApp</a>
-          </div>
-        </div>
-        <div class="hero-right">
-          <img src="assets/logo.jpg" alt="logo" class="hero-logo" style="max-width: 250px; height: auto;">
-        </div>
-      </div>
+      <h1>Distribuimos ropa para toda la familia</h1>
+      <p>Calidad, estilo y comodidad al mejor precio.</p>
+      <p>📍 <strong>CC Calles de Oro</strong></p>
+      <img src="assets/logo.jpg" alt="logo" class="hero-logo">
+      <a class="btn-primary" href="https://wa.me/573104105844" target="_blank">Hablar por WhatsApp</a>
     </section>
 
-    <section id="catalogo" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Catálogo</h2>
-          <p>Puedes descargar nuestro catálogo completo con fotos y precios aquí:</p>
-          <a class="btn-primary" href="catalogo/catalogo-distribuciones-rosita.docx" download>Descargar Catálogo (Word)</a>
-        </div>
-      </div>
+    <section id="catalogo">
+      <h2>Catálogo</h2>
+      <p>Puedes descargar nuestro catálogo completo con fotos y precios aquí:</p>
+      <a class="btn-primary" href="catalogo/catalogo-distribuciones-rosita.docx" download>Descargar Catálogo (Word)</a>
     </section>
 
-    <section id="contacto" class="section contact-section">
-      <div class="container">
-        <h2>Contacto</h2>
-        <div class="contact-grid">
-          <div>
-            <strong>Rosita Distribuciones</strong>
-            <p>📍 CC Calles de Oro</p>
-            <p>📱 WhatsApp: <a href="https://wa.me/573104105844">+57 310 4105844</a></p>
-            <p>📸 Instagram: <a href="https://instagram.com/distribuciones_rosita" target="_blank">@distribuciones_rosita</a></p>
-          </div>
-          <div class="contact-actions">
-            <a class="btn-primary" href="https://wa.me/573104105844">Enviar un mensaje al WhatsApp</a>
-          </div>
-        </div>
-      </div>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p><strong>Rosita Distribuciones</strong></p>
+      <p>📍 CC Calles de Oro</p>
+      <p>📱 WhatsApp: <a href="https://wa.me/573104105844">+57 310 4105844</a></p>
+      <p>📸 Instagram: <a href="https://instagram.com/distribuciones_rosita" target="_blank">@distribuciones_rosita</a></p>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div>© Rosita Distribuciones</div>
-      <div class="muted">Diseño listo para subir a Netlify o GitHub Pages</div>
-    </div>
+  <footer>
+    <p>© Rosita Distribuciones</p>
   </footer>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
